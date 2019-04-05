@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2F9B9B"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#B2B6B6"
+            android:text="Number Converter"
+            android:textColor="#3A3"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Put your number in box"
+            android:textColorHint="#B33B25"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinConversionSelection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#0A2AFA"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="0dp"
+                    android:padding="1dp"
+                    android:text="Decimal"
+                    android:textColor="#83099B"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/textDecimal"
+                    android:width="0dip"
+                    android:gravity="left"
+                    android:padding="6dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="1dp"
+                    android:padding="2dp"
+                    android:text="Binary"
+                    android:textColor="#0E42E4"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/textBinary"
+                    android:width="0dip"
+                    android:gravity="left"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="1dp"
+                    android:padding="2dp"
+                    android:text="Octal"
+                    android:textColor="#09EECC"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/textOctal"
+                    android:width="0dip"
+                    android:gravity="left"
+                    android:padding="5dp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="1dp"
+                    android:padding="2dp"
+                    android:text="Hexa-decimal"
+                    android:textColor="#2712E4"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/textHexa"
+                    android:layout_height="wrap_content"
+                    android:width="0dip"
+                    android:gravity="left"
+                    android:padding="5dp" />
+            </TableRow>
+
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
